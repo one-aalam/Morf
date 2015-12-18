@@ -14,7 +14,7 @@ module.exports = function(app) {
       reactHTML: '<b>Hello, React!</b>'
     });
 
-    /*
+  /*
     Router.run(routes, req.url, (Handler) => {
       var reactOutput = React.renderToString(<Handler/>);
       res.render('index.ejs',{reactOutput: reactHtml});

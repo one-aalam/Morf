@@ -1,46 +1,41 @@
-React Transform Boilerplate
+Morf (WIP)
 =====================
 
-A *new* Webpack boilerplate with:
+A Node/React/Redux/Webpack based boilerplate with isomorphic abilities
 
-* hot reloading React components;
-* error handling inside component `render()` function;
-* error handling for syntax errors (thanks, **[@glenjamin](https://github.com/glenjamin)**!)
+## Ambition
 
-Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.  
-**[Does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
+Starting point for applications with
+* Isomorphic view
+* Isomorphic styles
+* Isomorphic routing
+* Isomorphic data fetching
+* Isomorphic configuration
+* Isomorphic localization
 
-[![react-transform channel on slack](https://img.shields.io/badge/slack-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)
+with all development aids like
+
+* Hot reloading React components
 
 ## Demo
 
 ![](http://i.imgur.com/AhGY28T.gif)
 
 ```
-git clone https://github.com/gaearon/react-transform-boilerplate.git
-cd react-transform-boilerplate
+git clone https://github.com/one-aalam/morf
+cd morf
 npm install
 npm start
-open http://localhost:3000
+open http://localhost:3001
 ```
 
-Then go ahead and edit files inside `src` (any file except `index.js`).
+Then go ahead and edit files inside `src` (any file except `client.js`).
 
 ## What’s Inside
 
 
-The component instrumentation is implemented on top of **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)**:
-
-* **[react-transform-hmr](https://github.com/gaearon/react-transform-hmr)** handles hot reloading
-* **[react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors)** catches component errors
-
-The syntax errors are displayed in an overlay by **[@glenjamin](https://github.com/glenjamin)**’s **[webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware)** which replaces Webpack Dev Server.
 
 ## Troubleshooting
-
-### I can’t serve images / use different HTML file / etc
-
-This boilerplate is just a Webpack bundle served by an Express server. It’s not meant to demonstrate every feature of either project. Please consult Webpack and Express docs to learn how to serve images, or bundle them into your JavaScript application.
 
 ### I don’t see the syntax error overlay!
 
@@ -58,7 +53,6 @@ React.render(<App />, document.getElementById('root'))
 
 ## Discussion
 
-You can discuss React Transform and related projects in **#react-transform** channel on [Reactiflux Slack](http://reactiflux.com).
 
 ## License
 

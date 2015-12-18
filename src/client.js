@@ -4,7 +4,10 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import { Router, Route, Link, IndexRoute } from 'react-router'
 
 import { App } from './components/App';
+import { Footer } from './components/Footer/Footer';
 
+
+/*
 class A extends Component{
 	render(){
 		return(
@@ -15,7 +18,7 @@ class A extends Component{
           		<li><Link to="/inbox">Inbox</Link></li>
         		</ul>
 				{this.props.children}
-
+				
 			</div>
 		);
 	}
@@ -25,7 +28,8 @@ class About extends Component{
 	render(){
 		return (
 			<div>
-				About
+				Aboutx
+				<Footer/>
 			</div>
 		);
 	}
@@ -54,15 +58,13 @@ class Message extends Component{
 class Inbox extends Component{
 	render(){
 		return (
-			<div>
-				Inbox
-				
-				<Link to="/message/12">Read 12</Link>
-
+			<div> dsdsds
+				<Link to="/message/12">Readx 12</Link>
+				<Footer/>
 			</div>
 		); 
 	}
-}
+}*/
 
 const routes = (
 	<Router history={createBrowserHistory()}>
@@ -78,4 +80,4 @@ const routes = (
 );
 
 
-ReactDOM.render(routes, document.getElementById('react-main-mount'));
+ReactDOM.render(<App/>, document.getElementById('react-main-mount'));
